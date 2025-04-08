@@ -4,8 +4,8 @@
     'summary': 'Módulo para calcular el precio de venta con porcentaje de ganancia',
     'depends': ['product'],
     'data': [
-        'views/product_template_form.xml',
-        'views/product_template_list.xml',
+        #'views/product_template_form.xml',
+        #'views/product_template_list.xml',
     ],
     'installable': True,
     'application': True,
