@@ -1,5 +1,0 @@
-<odoo>
-  <menuitem id="menu_material_needs_root" name="Material Needs">
-    <menuitem id="menu_material_needs" action="action_material_needs" name="Material Needs"></menuitem>
-  </menuitem>
-</odoo>

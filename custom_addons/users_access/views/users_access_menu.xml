@@ -1,5 +1,0 @@
-<odoo>
-    <menuitem id="custom_user_root" name="Gestión de Usuarios" sequence="10">
-        <menuitem id="custom_user_menu" name="Users Dependency" action="action_custom_user_view"/>
-    </menuitem>
-</odoo>
