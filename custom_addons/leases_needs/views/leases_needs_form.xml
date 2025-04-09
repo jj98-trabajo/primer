@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_form_leases_needs" model="ir.ui.view">
+        <field name="name">leases.needs.form</field>
+        <field name="model">leases.needs</field>
+        <field name="arch" type="xml">
+            <form string="Leases Needs">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="place" placeholder="Place Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="leases_details" string="Lease Details">
+                            <field name="annual_amount"/>
+                            <field name="cost"/>
+                            <field name="total_cost" readonly="1"/>
+                        </group>
+                        <group name="leases_status" string="Status">
+                            <field name="functional_area_id"/>
+                            <field name="approval_status_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

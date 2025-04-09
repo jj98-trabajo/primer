@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_employee_form" model="ir.ui.view">
+        <field name="name">employee_payroll.form</field>
+        <field name="model">employee.payroll</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <sheet>
+                    <group class="oe_title" name="employee_name" string="Employee">
+                        <h1>
+                            <field name="fullName" placeholder="Employee"/>
+                            <field name="document" placeholder="Document number"/>
+                        </h1>
+                    </group>
+                    <group name="employee_details" string="Employee Payroll">
+                        <field name="monthly_salary"/>
+                        <field name="job_position_id"/>
+                        <field name="functional_area_id"/>
+                        <field name="approval_status_id"/>
+                        <field name="annual_salary" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
