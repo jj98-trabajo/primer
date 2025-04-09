@@ -5,7 +5,7 @@
         <record id="view_vehiculo__tree" model="ir.ui.view">
             <field name="name">mi_modulo.vehiculo.tree</field>
             <field name="model">mi_modulo.vehiculo</field>
-            <field name="arch" type="xml">
+            <field name="arch">
                 <tree>
                     <field name="modelo"/>
                     <field name="color"/>
