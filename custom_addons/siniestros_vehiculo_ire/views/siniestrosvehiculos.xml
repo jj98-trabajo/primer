@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_vehiculo_tree_inherit" model="ir.ui.view">
+            <field name="name">siniestrosdevehiculos.tree.inherit</field>
+            <field name="model">mi_modulo.vehiculo</field>
+            <field name="inherit_id" ref="modulo_vehiculos_ire.view_vehiculo__tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='productos']" position="after">
+                    <field name="siniestros"/>
+                </xpath>
+
+            </field>
+        </record>
+        <!-- Vista de formulario heredada para res.partner -->
+        <record id="view_vehiculo_form_inherit" model="ir.ui.view">
+            <field name="name">siniestrosdevehiculos.form.inherit</field>
+            <field name="model">mi_modulo.vehiculo</field>
+            <field name="inherit_id" ref="modulo_vehiculos_ire.view_vehiculo_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='productos']" position="after">
+                    <field name="siniestros"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vehiculo_user,access_vehiculo_user,model_mi_modulo_vehiculo,base.group_user,1,1,1,1
+access_marca_user,access_marca_user,model_modulo_vehiculos_ire_marca_vehiculo,base.group_user,1,1,1,1
