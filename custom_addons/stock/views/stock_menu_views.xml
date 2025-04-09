@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <menuitem name="Inventory" id="menu_stock_root" sequence="140"
+    <menuitem name="Invertario QuindiColor" id="menu_stock_root" sequence="140"
         groups="group_stock_manager,group_stock_user"
         web_icon="stock,static/description/icon.png"/>
 
-    <menuitem id="menu_stock_warehouse_mgmt" name="Operations" parent="menu_stock_root" sequence="2"/>
-    <menuitem id="menu_stock_transfers" name="Transfers" parent="menu_stock_warehouse_mgmt" sequence="1"/>
-    <menuitem id="menu_stock_adjustments" name="Adjustments" parent="menu_stock_warehouse_mgmt" sequence="3"/>
-    <menuitem id="menu_stock_procurement" name="Procurement" parent="menu_stock_warehouse_mgmt" sequence="4"/>
+    <menuitem id="menu_stock_warehouse_mgmt" name="Operaciones" parent="menu_stock_root" sequence="2"/>
+    <menuitem id="menu_stock_transfers" name="Tranferencias" parent="menu_stock_warehouse_mgmt" sequence="1"/>
+    <menuitem id="menu_stock_adjustments" name="Ajustes" parent="menu_stock_warehouse_mgmt" sequence="3"/>
+    <menuitem id="menu_stock_procurement" name="Adquisición" parent="menu_stock_warehouse_mgmt" sequence="4"/>
 
-    <menuitem id="menu_stock_config_settings" name="Configuration" parent="menu_stock_root"
+    <menuitem id="menu_stock_config_settings" name="Configuración" parent="menu_stock_root"
         sequence="100" groups="group_stock_manager"/>
-    <menuitem id="menu_warehouse_config" name="Warehouse Management" parent="menu_stock_config_settings" groups="stock.group_stock_manager" sequence="1"/>
+    <menuitem id="menu_warehouse_config" name="Gestión de Almacenes" parent="menu_stock_config_settings" groups="stock.group_stock_manager" sequence="1"/>
 
 
-    <menuitem id="menu_product_in_config_stock" name="Products" parent="stock.menu_stock_config_settings" sequence="4"/>
+    <menuitem id="menu_product_in_config_stock" name="Productos" parent="stock.menu_stock_config_settings" sequence="4"/>
 
     <menuitem id="menu_wms_barcode_nomenclature_all" parent="menu_product_in_config_stock" action="barcodes.action_barcode_nomenclature_form"
         sequence="50" groups="base.group_no_one"/>
 
-    <menuitem id="product_uom_menu" name="Units of Measures" parent="menu_stock_config_settings"
+    <menuitem id="product_uom_menu" name="Unidades de Medida" parent="menu_stock_config_settings"
         sequence="5" groups="uom.group_uom"/>
 
     <menuitem
@@ -31,17 +31,17 @@
 
     <menuitem
         action="uom.product_uom_categ_form_action" id="menu_stock_uom_categ_form_action"
-        name="UoM Categories"
+        name="UoM Categorias"
         parent="product_uom_menu" sequence="5"/>
     <menuitem
-        id="menu_stock_unit_measure_stock" name="Units of Measure"
+        id="menu_stock_unit_measure_stock" name="Unidades de Medida"
         parent="stock.menu_product_in_config_stock"  sequence="35" groups="uom.group_uom"/>
 
     <menuitem id="menu_stock_uom_form_action" action="uom.product_uom_form_action"
         name="UoM" active="False"
         parent="product_uom_menu" sequence="35" groups="base.group_no_one"/>
 
-    <menuitem id="menu_stock_inventory_control" name="Products" parent="menu_stock_root" sequence="4"/>
+    <menuitem id="menu_stock_inventory_control" name="Productos" parent="menu_stock_root" sequence="4"/>
 
-    <menuitem id="stock.menu_warehouse_report" name="Reporting" sequence="99" parent="stock.menu_stock_root" groups="group_stock_manager"/>
+    <menuitem id="stock.menu_warehouse_report" name="Reportes" sequence="99" parent="stock.menu_stock_root" groups="group_stock_manager"/>
 </odoo>
