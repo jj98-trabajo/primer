@@ -44,7 +44,7 @@ Dashboard / Reports for Warehouse Management includes:
         'report/account_invoice_report_view.xml',
     ],
     'installable': True,
-    'auto_install': False,
+    'auto_install': True,
     'post_init_hook': '_configure_journals',
     'assets': {
         'web.assets_backend': [
