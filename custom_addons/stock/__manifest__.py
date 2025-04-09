@@ -2,10 +2,11 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Inventory',
+    'name': 'Inventario QuindiColor',
     'version': '1.1',
-    'summary': 'Manage your stock and logistics activities',
+    'summary': 'Gestión avanzada de inventario y logística',
     'website': 'https://www.odoo.com/app/inventory',
+    'description': 'Módulo extendido para gestión profesional de inventarios', 
     'depends': ['product', 'barcodes_gs1_nomenclature', 'digest'],
     'category': 'Inventory/Inventory',
     'sequence': 25,
